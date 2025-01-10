@@ -29,25 +29,25 @@
     <AppXManifest Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2025-01-10T06:30:34.289</Modified>
+      <Modified>2025-01-10T06:48:45.762</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2025-01-10T06:30:34.054</Modified>
+      <Modified>2025-01-10T06:48:45.605</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DownloadFileMultiThread.runtimeconfig.json">
       <PackagePath>DownloadFileMultiThread.runtimeconfig.json</PackagePath>
-      <Modified>2025-01-10T03:28:57.386</Modified>
+      <Modified>2025-01-10T06:47:21.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DownloadFileMultiThread.dll">
       <PackagePath>DownloadFileMultiThread.dll</PackagePath>
-      <Modified>2025-01-10T06:30:33.789</Modified>
+      <Modified>2025-01-10T06:48:45.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\apphost.exe">
       <PackagePath>DownloadFileMultiThread.exe</PackagePath>
-      <Modified>2025-01-10T06:30:33.836</Modified>
+      <Modified>2025-01-10T06:48:45.542</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\microsoft.web.webview2\1.0.2651.64\runtimes\win-x64\native\WebView2Loader.dll">
       <PackagePath>runtimes\win-x64\native\WebView2Loader.dll</PackagePath>
@@ -871,7 +871,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DownloadFileMultiThread.deps.json">
       <PackagePath>DownloadFileMultiThread.deps.json</PackagePath>
-      <Modified>2025-01-10T03:28:57.255</Modified>
+      <Modified>2025-01-10T06:47:20.886</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\ProJect-HK5\DownloadFileMultiThread\DownloadFileMultiThread\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

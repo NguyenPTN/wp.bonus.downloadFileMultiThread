@@ -8,89 +8,90 @@
     mc:Ignorable="d"
     Title="DownloadFileMultiThread">
 
-    
-    <Grid Margin="20">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-        </Grid.RowDefinitions>
 
-        <!-- Tiêu đề -->
-        <TextBlock Text="Download File Multi Thread" 
-                   Grid.Row="0"
-                   FontSize="24" 
-                   FontWeight="Bold" 
-                   HorizontalAlignment="Center" 
-                   Margin="0,0,0,20" />
+    <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+        <Grid Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
-        <!-- Download Link -->
-        <StackPanel Grid.Row="1" Orientation="Vertical" Margin="0,10">
-            <TextBlock Text="Download Link" FontSize="16" />
-            <TextBox x:Name="DownloadLinkTextBox" PlaceholderText="Enter the download link..." Margin="0,5,0,0" />
-        </StackPanel>
+            <!-- Tiêu đề -->
+            <TextBlock Text="Download File Multi Thread" 
+                       Grid.Row="0"
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Margin="0,0,0,20" />
 
-        <!-- Save Path -->
-        <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,10">
-            <TextBlock Text="Save Path" FontSize="16" />
-            <TextBox x:Name="SavePathTextBox" PlaceholderText="Enter the save path..." Margin="0,5,0,0" />
-        </StackPanel>
+            <!-- Download Link -->
+            <StackPanel Grid.Row="1" Orientation="Vertical" Margin="0,10">
+                <TextBlock Text="Download Link" FontSize="16" />
+                <TextBox x:Name="DownloadLinkTextBox" PlaceholderText="Enter the download link..." Margin="0,5,0,0" />
+            </StackPanel>
 
-        <!-- File Name -->
-        <StackPanel Grid.Row="3" Orientation="Vertical" Margin="0,10">
-            <TextBlock Text="File Name" FontSize="16" />
-            <TextBox x:Name="FileNameTextBox" PlaceholderText="Enter file name..." Margin="0,5,0,0" />
-        </StackPanel>
+            <!-- Save Path -->
+            <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0,10">
+                <TextBlock Text="Save Path" FontSize="16" />
+                <TextBox x:Name="SavePathTextBox" PlaceholderText="Enter the save path..." Margin="0,5,0,0" />
+            </StackPanel>
 
-        <!-- File Extension -->
-        <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,10">
-            <TextBlock Text="Extension" FontSize="16" VerticalAlignment="Center" Margin="0,0,10,0" />
-            <ComboBox x:Name="FileExtensionComboBox" 
-                      Width="120" 
-                      HorizontalAlignment="Left"
-                      SelectedIndex="0">
-                <ComboBoxItem Content=".txt" />
-                <ComboBoxItem Content=".mp4" />
-                <ComboBoxItem Content=".png" />
-                <ComboBoxItem Content=".pdf" />
-                <ComboBoxItem Content=".jpg" />
-                <ComboBoxItem Content=".zip" />
+            <!-- File Name -->
+            <StackPanel Grid.Row="3" Orientation="Vertical" Margin="0,10">
+                <TextBlock Text="File Name" FontSize="16" />
+                <TextBox x:Name="FileNameTextBox" PlaceholderText="Enter file name..." Margin="0,5,0,0" />
+            </StackPanel>
 
-            </ComboBox>
-        </StackPanel>
+            <!-- File Extension -->
+            <StackPanel Grid.Row="4" Orientation="Horizontal" Margin="0,10">
+                <TextBlock Text="Extension" FontSize="16" VerticalAlignment="Center" Margin="0,0,10,0" />
+                <ComboBox x:Name="FileExtensionComboBox" 
+                          Width="120" 
+                          HorizontalAlignment="Left"
+                          SelectedIndex="0">
+                    <ComboBoxItem Content=".txt" />
+                    <ComboBoxItem Content=".mp4" />
+                    <ComboBoxItem Content=".png" />
+                    <ComboBoxItem Content=".pdf" />
+                    <ComboBoxItem Content=".jpg" />
+                    <ComboBoxItem Content=".zip" />
+                </ComboBox>
+            </StackPanel>
 
-        <!-- Number of Threads -->
-        <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="0,10">
-            <TextBlock Text="Number of Threads" FontSize="16" VerticalAlignment="Center" Margin="0,0,10,0" />
-            <NumberBox x:Name="NumberOfThreadsBox" 
-                       Minimum="1" 
-                       Value="1" 
-                       Width="100" 
-                       HorizontalAlignment="Left" />
-        </StackPanel>
+            <!-- Number of Threads -->
+            <StackPanel Grid.Row="5" Orientation="Horizontal" Margin="0,10">
+                <TextBlock Text="Number of Threads" FontSize="16" VerticalAlignment="Center" Margin="0,0,10,0" />
+                <NumberBox x:Name="NumberOfThreadsBox" 
+                           Minimum="1" 
+                           Value="1" 
+                           Width="100" 
+                           HorizontalAlignment="Left" />
+            </StackPanel>
 
-        <StackPanel Grid.Row="6" Orientation="Vertical" Margin="0,10">
-            <TextBlock x:Name="StatusTextBlock" Text="Status: Ready" FontSize="14" Foreground="Gray" Margin="0,0,0,5" />
-            <StackPanel x:Name="ProgressBarContainer" Orientation="Vertical" />
-        </StackPanel>
+            <StackPanel Grid.Row="6" Orientation="Vertical" Margin="0,10">
+                <TextBlock x:Name="StatusTextBlock" Text="Status: Ready" FontSize="14" Foreground="Gray" Margin="0,0,0,5" />
+                <StackPanel x:Name="ProgressBarContainer" Orientation="Vertical" />
+            </StackPanel>
 
-        <!-- Nút download -->
-        <Button Grid.Row="7" 
-                Content="Download" 
-                Width="120" 
-                Height="40" 
-                HorizontalAlignment="Center" 
-                VerticalAlignment="Center" 
-                Background="DodgerBlue" 
-                Foreground="White" 
-                FontWeight="Bold" 
-                Margin="0,20,0,0"
-                Click="OnDownloadButtonClick"
-                />
-    </Grid>
+            <!-- Download Button -->
+            <Button Grid.Row="7" 
+                    Content="Download" 
+                    Width="120" 
+                    Height="40" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" 
+                    Background="DodgerBlue" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Margin="0,20,0,0"
+                    Click="OnDownloadButtonClick"
+                    />
+        </Grid>
+    </ScrollViewer>
 </Window>
