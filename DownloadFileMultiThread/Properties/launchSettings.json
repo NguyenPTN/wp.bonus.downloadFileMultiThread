@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "DownloadFileMultiThread (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "DownloadFileMultiThread (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
